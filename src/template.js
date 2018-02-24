@@ -17,7 +17,8 @@ const getTemplate = (articles, renderOnlyTitles = true)  => {
             new Article(
                 o.title,
                 o.titleNoFormatting,
-                o.content, o.url,
+                o.content,
+                o.url,
                 o.publisher,
                 o.publishedDate,
                 o.image,
@@ -26,6 +27,5 @@ const getTemplate = (articles, renderOnlyTitles = true)  => {
         )
         .reduce((a, article) => a + article.render(renderOnlyTitles), '');
 };
-
 
 export default getTemplate;

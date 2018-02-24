@@ -22,7 +22,6 @@ export default class View {
 
     setView() {
         this.$rootElement.innerHTML = this.template;
-        //this.$rootElement.style.display = 'none';
     }
 
     handleSearch(value) {

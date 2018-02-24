@@ -30,7 +30,10 @@ const isRelevantArticle = (article, filters = {}) => {
                 case CONTENT_PROP_KEY:
                 case TITLE_NO_FORMATTING_PROP_KEY:
                     isArticleMatchSearchCriteria =
-                        isRelevantSearchCriteria(article[filterKey], filters[filterKey]);
+                        isRelevantSearchCriteria(
+                            encodeURIComponent(article[filterKey]),
+                            encodeURIComponent(filters[filterKey])
+                        );
                     break;
             }
         });

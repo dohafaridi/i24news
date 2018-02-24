@@ -17,10 +17,6 @@ export default class ArticleContainer {
         this.relatedStories = relatedStories || [];
     }
 
-    handleTitleClick() {
-        return this.render();
-    }
-
     render(renderOnlyTitle = true) {
         return Article(renderOnlyTitle, this);
     }

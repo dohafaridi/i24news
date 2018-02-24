@@ -99,6 +99,7 @@ a:hover .link__animation--underline:after {
 .article__title {
     margin-bottom: 10px;
 }
+
 .article__title:last-child {
     margin-bottom: 0;
     padding-bottom: 40px;
