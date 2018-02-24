@@ -1,0 +1,149 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: 0;
+}
+
+*:focus {
+    outline: none;
+}
+
+body {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000;
+}
+
+h2 {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+a {
+    position: relative;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+a:hover {
+    color: #183051;
+}
+
+a:after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 0 5px 6px;
+    border-color: transparent transparent transparent #333;
+    right: -10px;
+    display: inline-block;
+}
+
+input {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    font-size: 1em;
+    color: #666;
+    border: 1px solid #183051;
+}
+
+.link__animation--underline:after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    bottom: -1px;
+    left: 0;
+    width: 0;
+    background: #183051;
+    transition: width .3s ease;
+}
+
+a:hover .link__animation--underline:after {
+    width: 100%;
+}
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.articles__form {
+    margin: 100px 0 50px 0;
+}
+
+.form__input-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form__input {
+    display: inline-flex;
+    width: 40%;
+    padding: 0 10px;
+}
+
+.articles__no-result {
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.article__title {
+    margin-bottom: 10px;
+}
+.article__title:last-child {
+    margin-bottom: 0;
+    padding-bottom: 40px;
+    border-bottom: 2px solid #183051;
+}
+
+.article {
+    padding: 40px 0;
+}
+
+.article-top {
+    margin-bottom: 40px;
+} 
+
+.article__title--main {
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+.article__image {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.article__image--publisher {
+    padding-top: 10px;
+    text-align: right;
+}
+
+.article__publisher {
+    text-align: right;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.article__readmore {
+    display: inline-block;
+    margin: 10px 0;
+}
+
+.article__related-stories--item {
+    margin-bottom: 10px;
+    list-style: none;
+}

@@ -1,0 +1,37 @@
+{
+  "name": "i24news",
+  "version": "1.0.0",
+  "description": "i24news, A Javascript app built unsing ES6.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "webpack --hide-modules",
+    "start": "./node_modules/.bin/webpack-dev-server --inline"
+  },
+  "keywords": [
+    "news",
+    "javascript",
+    "es6"
+  ],
+  "author": "Doha Faridi",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-jest": "^22.1.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-3": "^6.24.1",
+    "file-loader": "^1.1.6",
+    "html-webpack-plugin": "^2.30.1",
+    "jest": "^22.1.4",
+    "query-string": "^5.0.1",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.11.1"
+  },
+  "dependencies": {
+    "lodash": "^4.17.4"
+  }
+}
